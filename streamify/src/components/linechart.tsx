@@ -21,17 +21,16 @@ import {
 export const description = "A linear line chart"
 
 const chartData = [
-  { month: "January", desktop: 186 },
-  { month: "February", desktop: 305 },
-  { month: "March", desktop: 237 },
-  { month: "April", desktop: 73 },
-  { month: "May", desktop: 209 },
-  { month: "June", desktop: 214 },
+  { song: "Kesariya", streams: 186 },
+  { song: "Lofi", streams: 305 },
+  { song: "Apna Bana Le", streams: 237 },
+  { song: "Banjara", streams: 73 },
+  { song: "Dus Bahane", streams: 209 },
 ]
 
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  streams: {
+    label: "streams",
     color: "hsl(var(--chart-1))",
   },
 } satisfies ChartConfig
@@ -55,7 +54,7 @@ export function Linecomponent() {
           >
             <CartesianGrid vertical={false} />
             <XAxis
-              dataKey="month"
+              dataKey="song"
               tickLine={false}
               axisLine={false}
               tickMargin={8}
@@ -66,9 +65,9 @@ export function Linecomponent() {
               content={<ChartTooltipContent hideLabel />}
             />
             <Line
-              dataKey="desktop"
+              dataKey="streams"
               type="linear"
-              stroke="var(--color-desktop)"
+              stroke="var(--color-streams)"
               strokeWidth={2}
               dot={false}
             />
@@ -77,10 +76,10 @@ export function Linecomponent() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Trending up by 5.2% this song <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+          Showing total visitors for the last 6 songs
         </div>
       </CardFooter>
     </Card>

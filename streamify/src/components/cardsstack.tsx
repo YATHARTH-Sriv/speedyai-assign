@@ -17,7 +17,7 @@ export function CardWithForm({title,description,value}:{title:string,description
         <CardDescription className=" text-black">{description}</CardDescription>
       </CardHeader>
       <CardContent>
-        { value && value==="Arijit Singh" ? <div className=" flex gap-2 text-black text-2xl">
+        { value && value==="Arijit Singh" ? <div className="ml-10 flex gap-2 text-black text-2xl">
                    {value} <img src="https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900" alt="" className="h-8 w-8 flex-shrink-0 rounded-full" width={32} height={32}/>
                   </div> : 
                   <div className=" text-black text-2xl">

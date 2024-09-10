@@ -21,19 +21,23 @@ import {
 export const description = "A bar chart"
 
 const chartData = [
-  { month: "January", desktop: 186 },
-  { month: "February", desktop: 305 },
-  { month: "March", desktop: 237 },
-  { month: "April", desktop: 73 },
-  { month: "May", desktop: 209 },
-  { month: "June", desktop: 214 },
+  { month: "January", ActiveUsers: 186 },
+  { month: "February", ActiveUsers: 305 },
+  { month: "March", ActiveUsers: 237 },
+  { month: "April", ActiveUsers: 73 },
+  { month: "May", ActiveUsers: 209 },
+  { month: "June", ActiveUsers: 214 },
+  { month: "July", ActiveUsers: 400 },
+  { month: "August", ActiveUsers: 373 },
 ]
 
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  ActiveUsers: {
+    label: "ActiveUsers",
     color: "hsl(var(--chart-1))",
   },
+  
+  
 } satisfies ChartConfig
 
 export function Component() {
@@ -41,7 +45,7 @@ export function Component() {
     <Card>
       <CardHeader>
         <CardTitle>Bar Chart</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardDescription>January - Sept 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -58,16 +62,14 @@ export function Component() {
               cursor={false}
               content={<ChartTooltipContent hideLabel />}
             />
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={8} />
+            <Bar dataKey="ActiveUsers" fill="var(--color-ActiveUsers)" radius={8} />
+            
           </BarChart>
         </ChartContainer>
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
-        <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-        </div>
-        <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+        <div className="leading-none flex gap-2 text-muted-foreground">
+          Showing total visitors for the last 6 months <TrendingUp className="h-4 w-4" />
         </div>
       </CardFooter>
     </Card>
