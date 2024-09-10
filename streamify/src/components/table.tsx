@@ -13,7 +13,7 @@ type Stream = {
   userId: string
 }
 
-// Sample data
+// data
 const initialStreams: Stream[] = [
   { songName: "Kesariya", artist: "Arijit Singh", dateStreamed: "2024-06-15", streamCount: 186, userId: "user123" },
   { songName: "My Dil Goes..", artist: "Shaan", dateStreamed: "2024-06-14", streamCount: 305, userId: "user456" },
@@ -28,7 +28,7 @@ export default function Streamtable() {
   const [filterArtist, setFilterArtist] = useState("")
   const [filterSong, setFilterSong] = useState("")
 
-  // Sorting function
+// Sorting 
   const sortData = (key: keyof Stream) => {
     let direction: 'asc' | 'desc' = 'asc'
     if (sortConfig && sortConfig.key === key && sortConfig.direction === 'asc') {
@@ -37,11 +37,11 @@ export default function Streamtable() {
     setSortConfig({ key, direction })
   }
 
-  // Apply sorting and filtering
+// Apply sorting and filtering
   const sortedAndFilteredStreams = useMemo(() => {
     let result = [...streams]
 
-    // Apply filters
+//  filters
     if (filterArtist) {
       result = result.filter(stream => 
         stream.artist.toLowerCase().includes(filterArtist.toLowerCase())
@@ -53,7 +53,7 @@ export default function Streamtable() {
       )
     }
 
-    // Apply sorting
+//sorting
     if (sortConfig !== null) {
       result.sort((a, b) => {
         if (a[sortConfig.key] < b[sortConfig.key]) {

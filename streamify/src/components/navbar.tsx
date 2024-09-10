@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 import {  MenuItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";

@@ -1,4 +1,3 @@
-"use client"
 
 import * as React from "react"
 import { TrendingUp } from "lucide-react"
@@ -20,7 +19,7 @@ import {
 } from "@/components/ui/chart"
 
 export const description = "A donut chart with text"
-
+//data
 const chartData = [
   { revenue: "subscribers", money: 275, fill: "var(--color-chrome)" },
   { revenue: "ads", money: 200, fill: "var(--color-safari)" },
