@@ -25,7 +25,7 @@ const chartData = [
   { revenue: "subscribers", money: 275, fill: "var(--color-chrome)" },
   { revenue: "ads", money: 200, fill: "var(--color-safari)" },
   { revenue: "gift", money: 287, fill: "var(--color-firefox)" },
-  { revenue: "api-subscribers", money: 173, fill: "var(--color-edge)" },
+  { revenue: "api", money: 173, fill: "var(--color-edge)" },
 ]
 
 const chartConfig = {
@@ -63,7 +63,7 @@ export function Piecomponent() {
     <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">
         <CardTitle>Pie Chart - Revenue Streams(in $)</CardTitle>
-        <CardDescription>January - August 2024</CardDescription>
+        <CardDescription>January - Sept 2024</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer
@@ -73,7 +73,7 @@ export function Piecomponent() {
           <PieChart>
             <ChartTooltip
               cursor={false}
-              content={<ChartTooltipContent hideLabel />}
+              content={<ChartTooltipContent  />}
             />
             <Pie
               data={chartData}

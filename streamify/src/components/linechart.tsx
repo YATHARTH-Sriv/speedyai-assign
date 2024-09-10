@@ -22,7 +22,7 @@ export const description = "A linear line chart"
 
 const chartData = [
   { song: "Kesariya", streams: 186 },
-  { song: "Lofi", streams: 305 },
+  { song: "My Dil Goes..", streams: 305 },
   { song: "Apna Bana Le", streams: 237 },
   { song: "Banjara", streams: 73 },
   { song: "Dus Bahane", streams: 209 },
@@ -39,8 +39,8 @@ export function Linecomponent() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Line Chart - Linear</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardTitle>Top 5 Streamed Songs</CardTitle>
+        <CardDescription>January - Sept 2024</CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -62,7 +62,7 @@ export function Linecomponent() {
             />
             <ChartTooltip
               cursor={false}
-              content={<ChartTooltipContent hideLabel />}
+              content={<ChartTooltipContent />}
             />
             <Line
               dataKey="streams"
@@ -79,7 +79,7 @@ export function Linecomponent() {
           Trending up by 5.2% this song <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 songs
+          Showing total visitors for the last 5 songs
         </div>
       </CardFooter>
     </Card>

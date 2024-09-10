@@ -15,11 +15,11 @@ type Stream = {
 
 // Sample data
 const initialStreams: Stream[] = [
-  { songName: "Kesariya", artist: "Arijit Singh", dateStreamed: "2023-06-15", streamCount: 186, userId: "user123" },
-  { songName: "My Dil Goes..", artist: "Shaan", dateStreamed: "2023-06-14", streamCount: 305, userId: "user456" },
-  { songName: "Apna Bana Le", artist: "Arijit Singh", dateStreamed: "2023-06-13", streamCount: 237, userId: "user123" },
-  { songName: "Banjara", artist: "Sukhwinder", dateStreamed: "2023-06-12", streamCount: 73, userId: "user101" },
-  { songName: "Dus Bahane", artist: "K.K.", dateStreamed: "2023-06-11", streamCount: 209, userId: "user202" },
+  { songName: "Kesariya", artist: "Arijit Singh", dateStreamed: "2024-06-15", streamCount: 186, userId: "user123" },
+  { songName: "My Dil Goes..", artist: "Shaan", dateStreamed: "2024-06-14", streamCount: 305, userId: "user456" },
+  { songName: "Apna Bana Le", artist: "Arijit Singh", dateStreamed: "2024-06-13", streamCount: 237, userId: "user123" },
+  { songName: "Banjara", artist: "Sukhwinder", dateStreamed: "2024-06-12", streamCount: 73, userId: "user101" },
+  { songName: "Dus Bahane", artist: "K.K.", dateStreamed: "2024-06-11", streamCount: 209, userId: "user202" },
 ]
 
 export default function Streamtable() {

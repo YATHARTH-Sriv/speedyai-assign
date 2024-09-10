@@ -36,6 +36,10 @@ const chartConfig = {
     label: "ActiveUsers",
     color: "hsl(var(--chart-1))",
   },
+  month: {
+    label: "month",
+    color: "#2563eb",
+  },
   
   
 } satisfies ChartConfig
@@ -59,8 +63,8 @@ export function Component() {
               tickFormatter={(value) => value.slice(0, 3)}
             />
             <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent hideLabel />}
+              cursor={true}
+              content={<ChartTooltipContent  />}
             />
             <Bar dataKey="ActiveUsers" fill="var(--color-ActiveUsers)" radius={8} />
             
