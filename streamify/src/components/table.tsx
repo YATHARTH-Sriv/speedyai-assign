@@ -23,7 +23,7 @@ const initialStreams: Stream[] = [
 ]
 
 export default function Streamtable() {
-  const [streams, setStreams] = useState<Stream[]>(initialStreams)
+  const streams = initialStreams
   const [sortConfig, setSortConfig] = useState<{ key: keyof Stream; direction: 'asc' | 'desc' } | null>(null)
   const [filterArtist, setFilterArtist] = useState("")
   const [filterSong, setFilterSong] = useState("")
