@@ -19,8 +19,9 @@ Did Some changes to the card component to have arguments and use the same card c
                     1. Bar Chart for the active users and the corresponding month<br>
                     2. Pie Chart to understand different streams of revenue and the revenue achieved<br>
                     3. Line Chart for the top 5 streamed songs<br>
-- Data Table:   Containing Song Name,Artist,	Date Streamed,	Stream Count and	User ID<br>
-                Also the sorting and filtering logic for date streamed and stream count also filter by name of artist and song<br>
+## Data Table:  
+Containing Song Name,Artist,	Date Streamed,	Stream Count and	User ID<br>
+Also the sorting and filtering logic for date streamed and stream count also filter by name of artist and song<br>
 
 Tried using same components with different data for optimization and to decrease the load time<br>
 A Footer Section containing links to the github repo and my socials<br>
