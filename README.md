@@ -1,8 +1,9 @@
 # speedyai-assign
 Designing a Dashboard for Streamify Service to understand the user trends
+[Live Link](https://speedyai-assignment.vercel.app/)
 Tech Used: ReactJS (Vite) Tailwindcss Shadcn UI Accertinity Ui
 
-#The navbar section
+The navbar section
 Home Metrics(key Metrics) Data(containing the graphs) Table
 
 #Then I wanted to have a Hero section 
