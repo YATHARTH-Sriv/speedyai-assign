@@ -12,13 +12,14 @@ A welcome section with some sparkling effect UI <br>
 # Content Section<br>
 The different ways to understand the userbase of Streamify<br>
 ## Key Metrics:<br>
--  5 cards comprising of different types of data.<br>
+5 cards comprising of different types of data.<br>
 Did Some changes to the card component to have arguments and use the same card component without making new file for each card<br>
 
 ## Data Visulaisation: Graphs indicating different types of data metrics<br>
-                    1. Bar Chart for the active users and the corresponding month<br>
-                    2. Pie Chart to understand different streams of revenue and the revenue achieved<br>
-                    3. Line Chart for the top 5 streamed songs<br>
+1. Bar Chart for the active users and the corresponding month<br>
+2. Pie Chart to understand different streams of revenue and the revenue achieved<br>
+3. Line Chart for the top 5 streamed songs<br>
+
 ## Data Table:  
 Containing Song Name,Artist,	Date Streamed,	Stream Count and	User ID<br>
 Also the sorting and filtering logic for date streamed and stream count also filter by name of artist and song<br>
