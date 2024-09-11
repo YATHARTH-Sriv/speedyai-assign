@@ -1,5 +1,5 @@
 # speedyai-assign
-Designing a Dashboard for Streamify Service to understand the user trends
+Designing a Dashboard for Streamify Service to understand the user trends<br>
 [Live Link](https://speedyai-assignment.vercel.app/)
 Tech Used: ReactJS (Vite) Tailwindcss Shadcn UI Accertinity Ui
 
