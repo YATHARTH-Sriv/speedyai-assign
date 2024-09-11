@@ -6,7 +6,7 @@ Tech Used: ReactJS (Vite) Tailwindcss Shadcn UI Accertinity Ui
 # The navbar section <br>
 Home Metrics(key Metrics) Data(containing the graphs) Table<br>
 
-# Then I wanted to have a Hero section <br>
+# Hero section <br>
 A welcome section with some sparkling effect UI <br>
 
 # Content Section<br>
